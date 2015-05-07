@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-7L-Dh7">
+                                <rect key="frame" x="194" y="122" width="213" height="292"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="292" id="8NL-x9-ypz"/>
+                                    <constraint firstAttribute="height" constant="292" id="Cpt-Cc-3gO"/>
+                                    <constraint firstAttribute="width" constant="213" id="K82-P0-g2y"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="213" id="XBu-7k-1Ri"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="carta_costas">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8NL-x9-ypz"/>
+                                        <exclude reference="Cpt-Cc-3gO"/>
+                                        <exclude reference="K82-P0-g2y"/>
+                                        <exclude reference="XBu-7k-1Ri"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="94" y="138" width="213" height="292"/>
+                                    <mask key="constraints">
+                                        <include reference="8NL-x9-ypz"/>
+                                        <include reference="Cpt-Cc-3gO"/>
+                                        <include reference="K82-P0-g2y"/>
+                                        <include reference="XBu-7k-1Ri"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="viraCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Gc-uW-syM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="aTx-7L-Dh7" secondAttribute="centerY" id="TPY-Ah-eZr"/>
+                            <constraint firstAttribute="centerX" secondItem="aTx-7L-Dh7" secondAttribute="centerX" id="y5B-2B-Op0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TPY-Ah-eZr"/>
+                                <exclude reference="y5B-2B-Op0"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="TPY-Ah-eZr"/>
+                                <include reference="y5B-2B-Op0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carta_costas" width="2150" height="2904"/>
+    </resources>
+</document>
